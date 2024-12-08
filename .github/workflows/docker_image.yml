@@ -56,4 +56,4 @@ jobs:
         sudo docker rm devops_step0 && 
         sudo docker rmi ${{ secrets.DOCKER_USERNAME }}/devops_step0:latest
         
-        sudo docker run -d -p 8090:8090 --name devops_step0 --restart always ${{ secrets.DOCKER_USERNAME }}/devops_step0:latest
+        sudo docker run -d -p 8070:8070 --name devops_step0 --restart always ${{ secrets.DOCKER_USERNAME }}/devops_step0:latest
